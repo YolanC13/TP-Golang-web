@@ -1,0 +1,19 @@
+{{define "change"}}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de test</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Nombre de vues</h1>
+    {{if .IsOdd}}
+        <p>Nombre de vues impair: {{.ViewCounter}}</p>
+    {{else}}
+        <p>Nombre de vues pair: {{.ViewCounter}}</p>
+    {{end}}
+</body>
+</html>
+{{end}}
