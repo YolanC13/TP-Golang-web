@@ -1,0 +1,15 @@
+{{define "userError"}}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inscription</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/promo/style.css">
+</head>
+<body>
+    <h1 class="centred">Erreurs lors de la saisie du formulaire</h1>
+    {{range .Errors}}
+        <h3>{{.}}</h3>
+    {{end}}
+</html>
+{{end}}

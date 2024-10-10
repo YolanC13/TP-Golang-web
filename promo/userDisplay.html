@@ -1,4 +1,4 @@
-{{define "change"}}
+{{define "userDisplay"}}
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,14 +8,11 @@
     <link rel="stylesheet" type="text/css" href="/promo/style.css">
 </head>
 <body>
-    <h1>Nombre de vues</h1>
-    {{if .IsOdd}}
-        <p>Nombre de vues impair: {{.ViewCounter}}</p>
-        <bg color="red">
-    {{else}}
-        <p>Nombre de vues pair: {{.ViewCounter}}</p>
-        <bg color="green">
-    {{end}}
+    <h1>Votre profil utilisateur</h1>
+    <p>Nom: {{.Nom}}</p>
+    <p>Prénom: {{.Prenom}}</p>
+    <p>Date de naissance: {{.DateNaissance}}</p>
+    <p>Sexe: {{.Sexe}}</p>
 </body>
 </html>
 {{end}}

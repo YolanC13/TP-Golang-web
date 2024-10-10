@@ -1,0 +1,29 @@
+{{define "userForm"}}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inscription</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/promo/style.css">
+</head>
+<body>
+    <h1>Inscription</h1>
+    <form action="/user/treatment" method="post">
+        <label for="nom">Nom:</label><br>
+        <input type="text" id="nom" name="nom" pattern="[A-Za-z]+" title="Seules les lettres sont autorisées" required><br>
+        <label for="prenom">Prénom:</label><br>
+        <input type="text" id="prenom" name="prenom" pattern="[A-Za-z]+" title="Seules les lettres sont autorisées" required><br>
+        <label for="age">Date de naissance:</label><br>
+        <input type="date" id="age" name="age" required><br>
+        <label for="sexe">Sexe:</label><br>
+        <input type="radio" id="sexe" name="sexe" value="Homme" required>
+        <label for="sexe">Masculin</label>
+        <input type="radio" id="sexe" name="sexe" value="Femme" required>
+        <label for="sexe">Féminin</label><br>
+        <input type="radio" id="sexe" name="sexe" value="Autre" required>
+        <label for="sexe">Autre</label><br>
+        <input type="submit" value="Valider">
+    </form>
+</body>
+</html>
+{{end}}
